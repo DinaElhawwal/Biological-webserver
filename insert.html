@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id='nav'>
+        <a href="/index.php" style='font-weight: bold; font-size: 24px;'>Home</a>
+        <a href="/insert.html">Insert</a>
+        <a href="/delete.html">Delete</a>
+        <a href="/update.html">Update</a>
+        <div id='profile'>
+            <a href="/signup.php">Sign Up</a>
+            <a href="/signin.php">Sign In</a>
+        </div>
+    </div>
+    <form action="insert.php" method="post">
+        <fieldset>
+            <legend>Insert Data</legend>
+
+            <label for="GeneName">Gene Name</label><br>
+            <input type="text" id="GeneName" name="GeneName"><br>
+            <label for="RefSeqNo">Ref Sequence No.</label><br>
+            <input type="text" id="RefSeqNo" name="RefSeqNo"><br>
+            <label for="Genome">Genome</label><br>
+            <input type="text" id="Genome" name="Genome"><br><br>
+            <button type="submit" name="submit">Insert</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
